@@ -93,6 +93,26 @@ namespace EjemploTabs_2021.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mascotas_portada {
+            get {
+                object obj = ResourceManager.GetObject("mascotas_portada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modelo_png {
+            get {
+                object obj = ResourceManager.GetObject("modelo_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Scorpion_Photograph_By_Shantanu_Kuveskar {
             get {
                 object obj = ResourceManager.GetObject("Scorpion_Photograph_By_Shantanu_Kuveskar", resourceCulture);
