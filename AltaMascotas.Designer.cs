@@ -29,6 +29,7 @@ namespace EjemploTabs_2021
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AltaMascotas));
             this.nombreMascota = new System.Windows.Forms.Label();
             this.textNombreMAS = new System.Windows.Forms.TextBox();
             this.textBoxChip = new System.Windows.Forms.TextBox();
@@ -157,6 +158,7 @@ namespace EjemploTabs_2021
             this.Controls.Add(this.chipMascota);
             this.Controls.Add(this.textNombreMAS);
             this.Controls.Add(this.nombreMascota);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AltaMascotas";
             this.Text = "AltaMAscotas";
             this.ResumeLayout(false);
