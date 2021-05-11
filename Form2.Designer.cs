@@ -45,21 +45,25 @@ namespace EjemploTabs_2021
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(165, 152);
+            this.button3.BackColor = System.Drawing.Color.Bisque;
+            this.button3.Location = new System.Drawing.Point(196, 152);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 45);
             this.button3.TabIndex = 2;
             this.button3.Text = "Login usuario";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.mascotas_portada;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 577);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.DoubleBuffered = true;
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);

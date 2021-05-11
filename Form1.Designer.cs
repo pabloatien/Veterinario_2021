@@ -35,6 +35,20 @@
             this.mascotaNueva = new System.Windows.Forms.Button();
             this.usuarioNuevo = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBoxCoste = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.checkBoxEsterilizado = new System.Windows.Forms.CheckBox();
+            this.checkBoxVacunas = new System.Windows.Forms.CheckBox();
+            this.textBoxChip = new System.Windows.Forms.TextBox();
+            this.textBoxEnfermedad = new System.Windows.Forms.TextBox();
+            this.textBoxCod_Ingreso = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,22 +56,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxCod_Ingreso = new System.Windows.Forms.TextBox();
-            this.textBoxEnfermedad = new System.Windows.Forms.TextBox();
-            this.textBoxChip = new System.Windows.Forms.TextBox();
-            this.checkBoxVacunas = new System.Windows.Forms.CheckBox();
-            this.checkBoxEsterilizado = new System.Windows.Forms.CheckBox();
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
-            this.textBoxCoste = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -80,6 +80,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.fondo;
             this.tabPage1.Controls.Add(this.mascotaNueva);
             this.tabPage1.Controls.Add(this.usuarioNuevo);
             this.tabPage1.ImageIndex = 13;
@@ -139,6 +140,126 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "La otra página";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBoxCoste
+            // 
+            this.textBoxCoste.Location = new System.Drawing.Point(129, 208);
+            this.textBoxCoste.Name = "textBoxCoste";
+            this.textBoxCoste.Size = new System.Drawing.Size(146, 20);
+            this.textBoxCoste.TabIndex = 18;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.PowderBlue;
+            this.label8.Location = new System.Drawing.Point(25, 208);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 23);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Coste";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(169, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(279, 128);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textBoxDescripcion
+            // 
+            this.textBoxDescripcion.Location = new System.Drawing.Point(129, 251);
+            this.textBoxDescripcion.Name = "textBoxDescripcion";
+            this.textBoxDescripcion.Size = new System.Drawing.Size(416, 20);
+            this.textBoxDescripcion.TabIndex = 15;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(130, 99);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(145, 20);
+            this.dateTimePicker2.TabIndex = 14;
+            // 
+            // checkBoxEsterilizado
+            // 
+            this.checkBoxEsterilizado.AutoSize = true;
+            this.checkBoxEsterilizado.Location = new System.Drawing.Point(411, 162);
+            this.checkBoxEsterilizado.Name = "checkBoxEsterilizado";
+            this.checkBoxEsterilizado.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxEsterilizado.TabIndex = 13;
+            this.checkBoxEsterilizado.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVacunas
+            // 
+            this.checkBoxVacunas.AutoSize = true;
+            this.checkBoxVacunas.Location = new System.Drawing.Point(411, 105);
+            this.checkBoxVacunas.Name = "checkBoxVacunas";
+            this.checkBoxVacunas.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxVacunas.TabIndex = 12;
+            this.checkBoxVacunas.UseVisualStyleBackColor = true;
+            // 
+            // textBoxChip
+            // 
+            this.textBoxChip.Location = new System.Drawing.Point(399, 45);
+            this.textBoxChip.Name = "textBoxChip";
+            this.textBoxChip.Size = new System.Drawing.Size(146, 20);
+            this.textBoxChip.TabIndex = 11;
+            // 
+            // textBoxEnfermedad
+            // 
+            this.textBoxEnfermedad.Location = new System.Drawing.Point(129, 157);
+            this.textBoxEnfermedad.Name = "textBoxEnfermedad";
+            this.textBoxEnfermedad.Size = new System.Drawing.Size(146, 20);
+            this.textBoxEnfermedad.TabIndex = 10;
+            // 
+            // textBoxCod_Ingreso
+            // 
+            this.textBoxCod_Ingreso.Location = new System.Drawing.Point(130, 45);
+            this.textBoxCod_Ingreso.Name = "textBoxCod_Ingreso";
+            this.textBoxCod_Ingreso.Size = new System.Drawing.Size(146, 20);
+            this.textBoxCod_Ingreso.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.PowderBlue;
+            this.label7.Location = new System.Drawing.Point(25, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 23);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Motivo de ingreso";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.PowderBlue;
+            this.label4.Location = new System.Drawing.Point(295, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 23);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Esterilizado";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.PowderBlue;
+            this.label5.Location = new System.Drawing.Point(295, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Vacunas";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.PowderBlue;
+            this.label6.Location = new System.Drawing.Point(295, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 23);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Chip";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -225,132 +346,12 @@
             this.imageList1.Images.SetKeyName(17, "icons8_veterinarian.ico");
             this.imageList1.Images.SetKeyName(18, "icons8_whatsapp.ico");
             // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.PowderBlue;
-            this.label4.Location = new System.Drawing.Point(295, 157);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 23);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Esterilizado";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.PowderBlue;
-            this.label5.Location = new System.Drawing.Point(295, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Vacunas";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.PowderBlue;
-            this.label6.Location = new System.Drawing.Point(295, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 23);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Chip";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.PowderBlue;
-            this.label7.Location = new System.Drawing.Point(25, 249);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 23);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Motivo de ingreso";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxCod_Ingreso
-            // 
-            this.textBoxCod_Ingreso.Location = new System.Drawing.Point(130, 45);
-            this.textBoxCod_Ingreso.Name = "textBoxCod_Ingreso";
-            this.textBoxCod_Ingreso.Size = new System.Drawing.Size(146, 20);
-            this.textBoxCod_Ingreso.TabIndex = 8;
-            // 
-            // textBoxEnfermedad
-            // 
-            this.textBoxEnfermedad.Location = new System.Drawing.Point(129, 157);
-            this.textBoxEnfermedad.Name = "textBoxEnfermedad";
-            this.textBoxEnfermedad.Size = new System.Drawing.Size(146, 20);
-            this.textBoxEnfermedad.TabIndex = 10;
-            // 
-            // textBoxChip
-            // 
-            this.textBoxChip.Location = new System.Drawing.Point(399, 45);
-            this.textBoxChip.Name = "textBoxChip";
-            this.textBoxChip.Size = new System.Drawing.Size(146, 20);
-            this.textBoxChip.TabIndex = 11;
-            // 
-            // checkBoxVacunas
-            // 
-            this.checkBoxVacunas.AutoSize = true;
-            this.checkBoxVacunas.Location = new System.Drawing.Point(411, 105);
-            this.checkBoxVacunas.Name = "checkBoxVacunas";
-            this.checkBoxVacunas.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxVacunas.TabIndex = 12;
-            this.checkBoxVacunas.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEsterilizado
-            // 
-            this.checkBoxEsterilizado.AutoSize = true;
-            this.checkBoxEsterilizado.Location = new System.Drawing.Point(411, 162);
-            this.checkBoxEsterilizado.Name = "checkBoxEsterilizado";
-            this.checkBoxEsterilizado.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxEsterilizado.TabIndex = 13;
-            this.checkBoxEsterilizado.UseVisualStyleBackColor = true;
-            // 
             // mySqlCommand1
             // 
             this.mySqlCommand1.CacheAge = 0;
             this.mySqlCommand1.Connection = null;
             this.mySqlCommand1.EnableCaching = false;
             this.mySqlCommand1.Transaction = null;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(130, 99);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(145, 20);
-            this.dateTimePicker2.TabIndex = 14;
-            // 
-            // textBoxDescripcion
-            // 
-            this.textBoxDescripcion.Location = new System.Drawing.Point(129, 251);
-            this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(416, 20);
-            this.textBoxDescripcion.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(169, 352);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(279, 128);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // textBoxCoste
-            // 
-            this.textBoxCoste.Location = new System.Drawing.Point(129, 208);
-            this.textBoxCoste.Name = "textBoxCoste";
-            this.textBoxCoste.Size = new System.Drawing.Size(146, 20);
-            this.textBoxCoste.TabIndex = 18;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.PowderBlue;
-            this.label8.Location = new System.Drawing.Point(25, 208);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 23);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Coste";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 

@@ -44,6 +44,7 @@ namespace EjemploTabs_2021
             // 
             // nombreMascota
             // 
+            this.nombreMascota.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreMascota.Location = new System.Drawing.Point(12, 33);
             this.nombreMascota.Name = "nombreMascota";
             this.nombreMascota.Size = new System.Drawing.Size(109, 37);
@@ -67,6 +68,7 @@ namespace EjemploTabs_2021
             // 
             // chipMascota
             // 
+            this.chipMascota.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chipMascota.Location = new System.Drawing.Point(12, 122);
             this.chipMascota.Name = "chipMascota";
             this.chipMascota.Size = new System.Drawing.Size(109, 37);
@@ -83,6 +85,7 @@ namespace EjemploTabs_2021
             // 
             // razaMascota
             // 
+            this.razaMascota.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.razaMascota.Location = new System.Drawing.Point(12, 344);
             this.razaMascota.Name = "razaMascota";
             this.razaMascota.Size = new System.Drawing.Size(109, 37);
@@ -99,6 +102,7 @@ namespace EjemploTabs_2021
             // 
             // especieMascota
             // 
+            this.especieMascota.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.especieMascota.Location = new System.Drawing.Point(12, 236);
             this.especieMascota.Name = "especieMascota";
             this.especieMascota.Size = new System.Drawing.Size(109, 37);
@@ -115,6 +119,7 @@ namespace EjemploTabs_2021
             // 
             // DNIDueño
             // 
+            this.DNIDueño.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DNIDueño.Location = new System.Drawing.Point(12, 461);
             this.DNIDueño.Name = "DNIDueño";
             this.DNIDueño.Size = new System.Drawing.Size(109, 37);
@@ -124,6 +129,8 @@ namespace EjemploTabs_2021
             // 
             // Insertar
             // 
+            this.Insertar.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.pedir_cita;
+            this.Insertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Insertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Insertar.Location = new System.Drawing.Point(606, 122);
             this.Insertar.Name = "Insertar";
@@ -137,6 +144,7 @@ namespace EjemploTabs_2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(848, 571);
             this.Controls.Add(this.Insertar);
             this.Controls.Add(this.textBoxDNIDueño);

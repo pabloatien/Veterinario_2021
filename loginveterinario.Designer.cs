@@ -38,6 +38,7 @@ namespace EjemploTabs_2021
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(119, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 42);
@@ -47,6 +48,7 @@ namespace EjemploTabs_2021
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(119, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 42);
@@ -70,6 +72,7 @@ namespace EjemploTabs_2021
             // 
             // Comprobar
             // 
+            this.Comprobar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Comprobar.Location = new System.Drawing.Point(122, 376);
             this.Comprobar.Name = "Comprobar";
             this.Comprobar.Size = new System.Drawing.Size(147, 80);
@@ -82,6 +85,7 @@ namespace EjemploTabs_2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EjemploTabs_2021.Properties.Resources.descarga;
             this.ClientSize = new System.Drawing.Size(387, 595);
             this.Controls.Add(this.Comprobar);
             this.Controls.Add(this.pass);
